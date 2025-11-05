@@ -1,14 +1,20 @@
 export const apps = [
   {
-    name: "Tekst",
-    path: "/text-file",
+    name: "Wgraj plik",
+    path: "/text-modifier",
+    description:
+      "Losowo przestawia litery w wyrazach (z wyjątkiem pierwszej i ostatniej) we wgranym pliku tekstowym.",
   },
   {
-    name: "PESEL",
-    path: "/pesel",
+    name: "Sprawdź PESEL",
+    path: "/validate-pesel",
+    description:
+      "Sprawdza poprawność numeru PESEL zgodnie z oficjalnym formatem.",
   },
   {
-    name: "Użytkownicy",
+    name: "Zobacz listę użytkowników",
     path: "/users",
+    description:
+      "Pobiera użytkowników z API, umożliwia ich wyszukiwanie i edycję danych.",
   },
 ];

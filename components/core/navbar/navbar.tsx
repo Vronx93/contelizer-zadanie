@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <HeroNavbar className="shadow-md">
+    <HeroNavbar className="shadow-md" height="var(--navbar-height)!">
       <NavbarContent justify="start">
         <NavbarBrand>
           <Link href="/" className="font-black text-inherit">
