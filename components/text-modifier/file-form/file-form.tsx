@@ -4,7 +4,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Button } from "@heroui/button";
 import { addToast } from "@heroui/react";
-import { shuffleText, shuffleWord } from "@/lib/utils";
+import { shuffleText, shuffleWord } from "@/components/text-modifier/utils";
 import { useEffect, useState } from "react";
 import NewText from "../new-text/new-text";
 
