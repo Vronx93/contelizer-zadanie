@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/providers/providers";
 import Navbar from "@/components/core/navbar/navbar";
 import Footer from "@/components/core/footer/footer";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,18 +28,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`overflow-x-clip w-full ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`w-full ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
           <Navbar />
           <main
-            className="flex min-h-custom-screen w-full max-w-3xl flex-col items-center justify-between py-8 px-4 mx-auto 
+            className="flex min-h-custom-screen w-full max-w-5xl flex-col items-center py-8 px-4 mx-auto 
           md:px-12 md:py-10
           xl:px-16 xl:py-20"
           >
             {children}
           </main>
           <Footer />
+          <ReactQueryDevtools initialIsOpen={false} />
         </Providers>
       </body>
     </html>

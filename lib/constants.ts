@@ -18,3 +18,6 @@ export const apps = [
       "Pobiera użytkowników z API, umożliwia ich wyszukiwanie i edycję danych.",
   },
 ];
+
+export const API_URL = "https://gorest.co.in/public/v2";
+export const API_TOKEN = process.env.NEXT_PUBLIC_API_TOKEN;

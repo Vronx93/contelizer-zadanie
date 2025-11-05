@@ -2,7 +2,7 @@ import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="h-footer flex w-full max-w-3xl border-t border-gray-500 py-8 px-16 mx-auto">
+    <footer className="h-footer flex w-full max-w-5xl border-t border-gray-500 py-8 px-16 mx-auto">
       <p className="text-xs inline-flex gap-1.5">
         Created by{" "}
         <a
